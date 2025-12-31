@@ -10,13 +10,13 @@
 <div align="center">
   <!-- ⚠️ 关键步骤：请将下方链接中的 '你的真实用户名' 替换为你地址栏里的 ID -->
   <!-- 例如：username=zhangsan -->
-  <img src="https://github-readme-stats.vercel.app/api?username=你的真实用户名&show_icons=true&theme=tokyonight&hide_border=true" height="180" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=你的真实用户名&layout=compact&theme=tokyonight&hide_border=true" height="180" alt="languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=ff66ccff&show_icons=true&theme=tokyonight&hide_border=true" height="180" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ff66ccff&layout=compact&theme=tokyonight&hide_border=true" height="180" alt="languages" />
 </div>
 
 <!-- 贡献活动图 -->
 <br/>
 <!-- ⚠️ 同样，请将下方的 '你的真实用户名' 替换为你真正的 ID -->
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=你的真实用户名&theme=tokyonight&bg_color=1a1b27&hide_border=true" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ff66ccff&theme=tokyonight&bg_color=1a1b27&hide_border=true" width="100%"/>
 
 </div>
