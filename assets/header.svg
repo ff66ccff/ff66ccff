@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="header-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0d1322" />
+      <stop offset="100%" stop-color="#060911" />
+    </linearGradient>
+
+    <!-- Title Gradient: Cyan -> Indigo -> Purple -->
+    <linearGradient id="title-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <!-- Subtle Ambient Glows -->
+    <radialGradient id="glow-cyan" cx="12%" cy="25%" r="45%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-purple" cx="88%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Technical Dot Grid -->
+    <pattern id="dot-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1e293b" fill-opacity="0.45" />
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code", "JetBrains Mono", Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+    .title { font-weight: 800; letter-spacing: -0.5px; }
+    .subhead { font-weight: 600; letter-spacing: 1.5px; }
+    .dim { fill: #94a3b8; }
+    .muted { fill: #64748b; }
+    .cyan { fill: #38bdf8; }
+    .purple { fill: #c084fc; }
+    .white { fill: #f8fafc; }
+    .border-glow { stroke: #1e293b; stroke-width: 1.5; }
+  </style>
+
+  <!-- Card Background -->
+  <rect width="900" height="240" rx="14" fill="url(#header-bg)" class="border-glow" />
+  <rect width="900" height="240" rx="14" fill="url(#dot-grid)" />
+  <rect width="900" height="240" rx="14" fill="url(#glow-cyan)" />
+  <rect width="900" height="240" rx="14" fill="url(#glow-purple)" />
+
+  <!-- Terminal Window Top Bar -->
+  <path d="M 0 14 Q 0 0 14 0 L 886 0 Q 900 0 900 14 L 900 38 L 0 38 Z" fill="#0c121e" fill-opacity="0.8" />
+  <line x1="0" y1="38" x2="900" y2="38" stroke="#1e293b" stroke-width="1" />
+
+  <!-- Traffic Dots -->
+  <circle cx="26" cy="19" r="5" fill="#ef4444" />
+  <circle cx="42" cy="19" r="5" fill="#f59e0b" />
+  <circle cx="58" cy="19" r="5" fill="#10b981" />
+
+  <!-- Terminal Bar Title -->
+  <text x="76" y="23" class="mono muted" font-size="11" font-weight="500">ff66ccff@scu-cs:~/portfolio (hero)</text>
+
+  <!-- Right Status Badge -->
+  <g transform="translate(734, 10)">
+    <rect width="142" height="18" rx="9" fill="#064e3b" fill-opacity="0.4" stroke="#059669" stroke-width="1" />
+    <circle cx="12" cy="9" r="3.5" fill="#34d399" />
+    <text x="22" y="13" class="mono" font-size="9.5" font-weight="600" fill="#34d399">STATUS: ONLINE</text>
+  </g>
+
+  <!-- Hero Content -->
+  <!-- Tagline / Affiliation -->
+  <text x="36" y="72" class="mono cyan subhead" font-size="11.5">// SICHUAN UNIVERSITY  •  COMPUTER SCIENCE</text>
+
+  <!-- Large Bold Name -->
+  <text x="35" y="118" class="mono title" font-size="44" fill="url(#title-gradient)">ff66ccff</text>
+
+  <!-- Terminal Cursor Block -->
+  <rect x="252" y="86" width="11" height="34" rx="2" fill="#38bdf8" fill-opacity="0.8" />
+
+  <!-- Role & Tagline -->
+  <text x="36" y="152" class="sans white" font-size="19" font-weight="600">
+    Computer Science Student <tspan fill="#64748b" font-weight="400">@</tspan> Sichuan University
+  </text>
+
+  <text x="36" y="176" class="sans dim" font-size="14" font-weight="400">
+    Building with Code &amp; AI <tspan fill="#475569">•</tspan> Artificial Intelligence <tspan fill="#475569">•</tspan> AI Agents <tspan fill="#475569">•</tspan> System Design
+  </text>
+
+  <!-- Divider Line -->
+  <line x1="36" y1="196" x2="864" y2="196" stroke="#1e293b" stroke-width="1" stroke-dasharray="6 4" />
+
+  <!-- Bottom Meta & Tags -->
+  <g transform="translate(36, 216)">
+    <text x="0" y="0" class="mono muted" font-size="11.5">STACK:</text>
+    
+    <rect x="54" y="-12" width="50" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="79" y="0" text-anchor="middle" class="mono cyan" font-size="10" font-weight="600">C++20</text>
+
+    <rect x="112" y="-12" width="58" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="141" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#fde047">Python</text>
+
+    <rect x="178" y="-12" width="76" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="216" y="0" text-anchor="middle" class="mono purple" font-size="10" font-weight="600">AI Agents</text>
+
+    <rect x="262" y="-12" width="74" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="299" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#38bdf8">SysDesign</text>
+
+    <rect x="344" y="-12" width="50" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="369" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#cbd5e1">Linux</text>
+
+    <rect x="402" y="-12" width="36" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="420" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#4ade80">Qt</text>
+  </g>
+
+  <!-- Motto on the right side -->
+  <text x="864" y="216" text-anchor="end" class="sans muted" font-size="12" font-style="italic">“给岁月以文明，而不是给文明以岁月。”</text>
+</svg>

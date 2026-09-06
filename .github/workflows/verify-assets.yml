@@ -1,0 +1,37 @@
+name: Verify Assets & Integrity
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Validate SVG Assets
+        run: |
+          python -c "
+          import glob
+          import xml.etree.ElementTree as ET
+
+          svg_files = glob.glob('assets/*.svg')
+          assert len(svg_files) > 0, 'No SVG files found in assets/'
+          for f in svg_files:
+              ET.parse(f)
+              print(f'Verified valid XML: {f}')
+          print('All profile assets verified successfully!')
+          "
