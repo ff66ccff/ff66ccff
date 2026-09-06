@@ -7,11 +7,11 @@
   </defs>
 
   <style>
-    .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code", "JetBrains Mono", Consolas, monospace; }
-    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+    .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code", "JetBrains Mono", "PingFang SC", "Microsoft YaHei", Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Roboto, sans-serif; }
     .badge-bg { fill: #111827; stroke: #1f293d; stroke-width: 1; }
     .badge-text { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code", monospace; font-size: 11px; font-weight: 600; }
-    .cat-title { font-family: ui-monospace, "SF Mono", monospace; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+    .cat-title { font-family: "PingFang SC", "Microsoft YaHei", ui-monospace, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; }
   </style>
 
   <!-- Card Background -->
@@ -26,42 +26,42 @@
   <circle cx="38" cy="17" r="4.5" fill="#f59e0b" />
   <circle cx="52" cy="17" r="4.5" fill="#10b981" />
 
-  <text x="70" y="21" class="mono" font-size="11" fill="#64748b" font-weight="500">toolchain // core-technologies-matrix</text>
+  <text x="70" y="21" class="sans" font-size="11" fill="#64748b" font-weight="500">技术栈与工具箱 // core-technologies-matrix</text>
 
   <!-- Row 1: Languages -->
   <g transform="translate(30, 68)">
-    <text x="0" y="0" class="cat-title" fill="#38bdf8">LANGUAGES &gt;</text>
+    <text x="0" y="0" class="cat-title" fill="#38bdf8">编程语言 &gt;</text>
 
     <!-- C++ -->
-    <g transform="translate(130, -16)">
+    <g transform="translate(110, -16)">
       <rect width="84" height="26" rx="6" class="badge-bg" stroke="#0284c7" stroke-opacity="0.6" />
       <circle cx="16" cy="13" r="5" fill="#00599c" />
       <text x="28" y="17" class="badge-text" fill="#e0f2fe">C++ 20</text>
     </g>
 
     <!-- Python -->
-    <g transform="translate(224, -16)">
+    <g transform="translate(204, -16)">
       <rect width="86" height="26" rx="6" class="badge-bg" stroke="#eab308" stroke-opacity="0.4" />
       <circle cx="16" cy="13" r="5" fill="#3776ab" />
       <text x="28" y="17" class="badge-text" fill="#fef08a">Python</text>
     </g>
 
     <!-- Java -->
-    <g transform="translate(320, -16)">
+    <g transform="translate(300, -16)">
       <rect width="76" height="26" rx="6" class="badge-bg" stroke="#ea580c" stroke-opacity="0.4" />
       <circle cx="16" cy="13" r="5" fill="#f89820" />
       <text x="28" y="17" class="badge-text" fill="#fed7aa">Java</text>
     </g>
 
     <!-- TypeScript -->
-    <g transform="translate(406, -16)">
+    <g transform="translate(386, -16)">
       <rect width="112" height="26" rx="6" class="badge-bg" stroke="#3b82f6" stroke-opacity="0.4" />
       <circle cx="16" cy="13" r="5" fill="#3178c6" />
       <text x="28" y="17" class="badge-text" fill="#bfdbfe">TypeScript</text>
     </g>
 
     <!-- JavaScript -->
-    <g transform="translate(528, -16)">
+    <g transform="translate(508, -16)">
       <rect width="108" height="26" rx="6" class="badge-bg" stroke="#ca8a04" stroke-opacity="0.4" />
       <circle cx="16" cy="13" r="5" fill="#f7df1e" />
       <text x="28" y="17" class="badge-text" fill="#fef9c3">JavaScript</text>
@@ -70,38 +70,38 @@
 
   <!-- Row 2: Systems & Tools -->
   <g transform="translate(30, 126)">
-    <text x="0" y="0" class="cat-title" fill="#a855f7">SYSTEMS &gt;</text>
+    <text x="0" y="0" class="cat-title" fill="#a855f7">系统与工具 &gt;</text>
 
     <!-- Linux -->
-    <g transform="translate(130, -16)">
+    <g transform="translate(110, -16)">
       <rect width="80" height="26" rx="6" class="badge-bg" stroke="#64748b" stroke-opacity="0.4" />
       <circle cx="16" cy="13" r="5" fill="#f59e0b" />
       <text x="28" y="17" class="badge-text" fill="#f1f5f9">Linux</text>
     </g>
 
     <!-- Git -->
-    <g transform="translate(220, -16)">
+    <g transform="translate(200, -16)">
       <rect width="66" height="26" rx="6" class="badge-bg" stroke="#f43f5e" stroke-opacity="0.4" />
       <circle cx="16" cy="13" r="5" fill="#f05032" />
       <text x="28" y="17" class="badge-text" fill="#ffe4e6">Git</text>
     </g>
 
     <!-- Docker -->
-    <g transform="translate(296, -16)">
+    <g transform="translate(276, -16)">
       <rect width="84" height="26" rx="6" class="badge-bg" stroke="#0ea5e9" stroke-opacity="0.4" />
       <circle cx="16" cy="13" r="5" fill="#2496ed" />
       <text x="28" y="17" class="badge-text" fill="#e0f2fe">Docker</text>
     </g>
 
     <!-- Qt -->
-    <g transform="translate(390, -16)">
+    <g transform="translate(370, -16)">
       <rect width="64" height="26" rx="6" class="badge-bg" stroke="#22c55e" stroke-opacity="0.4" />
       <circle cx="16" cy="13" r="5" fill="#41cd52" />
       <text x="28" y="17" class="badge-text" fill="#dcfce7">Qt</text>
     </g>
 
     <!-- Spring Boot -->
-    <g transform="translate(464, -16)">
+    <g transform="translate(444, -16)">
       <rect width="118" height="26" rx="6" class="badge-bg" stroke="#16a34a" stroke-opacity="0.4" />
       <circle cx="16" cy="13" r="5" fill="#6db33f" />
       <text x="28" y="17" class="badge-text" fill="#bbf7d0">Spring Boot</text>

@@ -32,8 +32,8 @@
   </defs>
 
   <style>
-    .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code", "JetBrains Mono", Consolas, monospace; }
-    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+    .mono { font-family: ui-monospace, "SF Mono", "Cascadia Code", "Fira Code", "JetBrains Mono", "PingFang SC", "Microsoft YaHei", Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Roboto, "Helvetica Neue", sans-serif; }
     .title { font-weight: 800; letter-spacing: -0.5px; }
     .subhead { font-weight: 600; letter-spacing: 1.5px; }
     .dim { fill: #94a3b8; }
@@ -60,18 +60,18 @@
   <circle cx="58" cy="19" r="5" fill="#10b981" />
 
   <!-- Terminal Bar Title -->
-  <text x="76" y="23" class="mono muted" font-size="11" font-weight="500">ff66ccff@scu-cs:~/portfolio (hero)</text>
+  <text x="76" y="23" class="mono muted" font-size="11" font-weight="500">ff66ccff@scu-cs:~/portfolio (个人主页)</text>
 
   <!-- Right Status Badge -->
   <g transform="translate(734, 10)">
     <rect width="142" height="18" rx="9" fill="#064e3b" fill-opacity="0.4" stroke="#059669" stroke-width="1" />
     <circle cx="12" cy="9" r="3.5" fill="#34d399" />
-    <text x="22" y="13" class="mono" font-size="9.5" font-weight="600" fill="#34d399">STATUS: ONLINE</text>
+    <text x="22" y="13" class="sans" font-size="10" font-weight="600" fill="#34d399">系统状态: 在线运行</text>
   </g>
 
   <!-- Hero Content -->
   <!-- Tagline / Affiliation -->
-  <text x="36" y="72" class="mono cyan subhead" font-size="11.5">// SICHUAN UNIVERSITY  •  COMPUTER SCIENCE</text>
+  <text x="36" y="72" class="mono cyan subhead" font-size="11.5">// 四川大学 · 计算机学院  •  SICHUAN UNIVERSITY CS</text>
 
   <!-- Large Bold Name -->
   <text x="35" y="118" class="mono title" font-size="44" fill="url(#title-gradient)">ff66ccff</text>
@@ -80,12 +80,12 @@
   <rect x="252" y="86" width="11" height="34" rx="2" fill="#38bdf8" fill-opacity="0.8" />
 
   <!-- Role & Tagline -->
-  <text x="36" y="152" class="sans white" font-size="19" font-weight="600">
-    Computer Science Student <tspan fill="#64748b" font-weight="400">@</tspan> Sichuan University
+  <text x="36" y="152" class="sans white" font-size="18.5" font-weight="600">
+    计算机科学与技术 本科在读 <tspan fill="#64748b" font-weight="400">@</tspan> 四川大学
   </text>
 
-  <text x="36" y="176" class="sans dim" font-size="14" font-weight="400">
-    Building with Code &amp; AI <tspan fill="#475569">•</tspan> Artificial Intelligence <tspan fill="#475569">•</tspan> AI Agents <tspan fill="#475569">•</tspan> System Design
+  <text x="36" y="176" class="sans dim" font-size="13.5" font-weight="400">
+    以代码与 AI 构筑系统 <tspan fill="#475569">•</tspan> 人工智能 <tspan fill="#475569">•</tspan> AI 智能体 <tspan fill="#475569">•</tspan> 软件工程与系统架构
   </text>
 
   <!-- Divider Line -->
@@ -93,25 +93,25 @@
 
   <!-- Bottom Meta & Tags -->
   <g transform="translate(36, 216)">
-    <text x="0" y="0" class="mono muted" font-size="11.5">STACK:</text>
+    <text x="0" y="0" class="sans muted" font-size="11.5" font-weight="600">专注领域:</text>
     
-    <rect x="54" y="-12" width="50" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
-    <text x="79" y="0" text-anchor="middle" class="mono cyan" font-size="10" font-weight="600">C++20</text>
+    <rect x="62" y="-12" width="50" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="87" y="0" text-anchor="middle" class="mono cyan" font-size="10" font-weight="600">C++20</text>
 
-    <rect x="112" y="-12" width="58" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
-    <text x="141" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#fde047">Python</text>
+    <rect x="120" y="-12" width="58" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="149" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#fde047">Python</text>
 
-    <rect x="178" y="-12" width="76" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
-    <text x="216" y="0" text-anchor="middle" class="mono purple" font-size="10" font-weight="600">AI Agents</text>
+    <rect x="186" y="-12" width="70" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="221" y="0" text-anchor="middle" class="sans purple" font-size="10" font-weight="600">AI 智能体</text>
 
-    <rect x="262" y="-12" width="74" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
-    <text x="299" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#38bdf8">SysDesign</text>
+    <rect x="264" y="-12" width="68" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="298" y="0" text-anchor="middle" class="sans" font-size="10" font-weight="600" fill="#38bdf8">系统设计</text>
 
-    <rect x="344" y="-12" width="50" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
-    <text x="369" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#cbd5e1">Linux</text>
+    <rect x="340" y="-12" width="50" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="365" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#cbd5e1">Linux</text>
 
-    <rect x="402" y="-12" width="36" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
-    <text x="420" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#4ade80">Qt</text>
+    <rect x="398" y="-12" width="36" height="17" rx="4" fill="#1e293b" fill-opacity="0.85" stroke="#334155" stroke-width="0.8" />
+    <text x="416" y="0" text-anchor="middle" class="mono" font-size="10" font-weight="600" fill="#4ade80">Qt</text>
   </g>
 
   <!-- Motto on the right side -->
